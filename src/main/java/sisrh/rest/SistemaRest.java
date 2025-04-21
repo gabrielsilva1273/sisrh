@@ -16,5 +16,13 @@ public class SistemaRest {
 		UUID uuid = UUID.randomUUID();
 		return Response.ok().entity("pong: " + uuid).build();
 	}
-
+	
+	@GET
+	@Path("datahora")
+	@Produces(MediaType.TEXT_PLAIN)
+	public Response datahora() {
+		String pattern = "dd/MM/YYYY - HH:mm:ss";
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+		return Response.ok().entity(simpleDateFormat.format(new Date())).build();
+	}
 }
