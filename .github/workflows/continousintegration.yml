@@ -42,5 +42,5 @@ jobs:
       - name: send custom message
         uses: appleboy/discord-action@v1.2.0
         with:
-          webhook_url: ${{ secrets.DISCORD-WEBHOOK }}
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
           message: The ${{ github.event_name }} event triggered first step.
