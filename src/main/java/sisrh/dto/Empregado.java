@@ -26,14 +26,6 @@ public class Empregado {
 		this.desligamento = desligamento;
 		this.salario = salario;
 	}
-	public Empregado(String matricula, String nome, Date admissao, Double salario) {
-		super();
-		this.matricula = matricula;
-		this.nome = nome;
-		this.admissao = admissao;
-		this.desligamento = null;
-		this.salario = salario;
-	}
 
 	public String getMatricula() {
 		return matricula;
