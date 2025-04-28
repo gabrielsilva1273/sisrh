@@ -34,3 +34,13 @@ jobs:
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
 
+
+    name: Messagem discord
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: send custom message
+        uses: appleboy/discord-action@v1.2.0
+        with:
+          webhook_url: ${{ secrets.DISCORD-WEBHOOK }}
+          message: The ${{ github.event_name }} event triggered first step.
