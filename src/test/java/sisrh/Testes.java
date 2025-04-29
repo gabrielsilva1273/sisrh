@@ -1,12 +1,10 @@
-package tests;
-
-
+package sisrh;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class Teste {
+public class Testes {
 	
 	@Test
     void test1() {
