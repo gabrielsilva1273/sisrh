@@ -1,4 +1,8 @@
 eclipse.preferences.version=1
+encoding/src/main/java=Cp1252
+encoding/src/main/resources=Cp1252
+encoding/src/test/java=Cp1252
+encoding/src/test/resources=Cp1252
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=10
 org.eclipse.jdt.core.compiler.compliance=10
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
